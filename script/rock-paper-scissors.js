@@ -10,8 +10,6 @@ function getComputerChoice() {
   }
 }
 
-console.log(getComputerChoice());
-
 function getHumanChoice() {
   let humanChoice = prompt("Enter your choice:");
 
@@ -19,11 +17,6 @@ function getHumanChoice() {
 
   return humanChoice;
 }
-
-console.log(getHumanChoice());
-
-const humanScore = 0;
-const computerScore = 0;
 
 function playRound(humanChoice, computerChoice) {
   if (computerChoice === humanChoice) {
@@ -44,8 +37,6 @@ function playRound(humanChoice, computerChoice) {
     return "Invalid choice.";
   }
 }
-
-console.log(playRound());
 
 function playGame() {
   let humanScore = 0;
@@ -77,3 +68,5 @@ function playGame() {
     console.log("The game is a draw!");
   }
 }
+
+playGame();
